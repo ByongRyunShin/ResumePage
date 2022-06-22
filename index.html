@@ -7,14 +7,14 @@
   <script>
   var time = 600;
   
-  var x = setInterval(function()
+  var x = setInterval(function() {
           document.getElementById("demo").innerHTML = time + "초";
           time--;
           
           if(time < 0){
               clearInterval(x);
               document.getElementById("demo").innerHTML = "축하";
-         }
+          }
   }, 1000);
 </script>
 <body>
