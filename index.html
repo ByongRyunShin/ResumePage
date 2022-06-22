@@ -5,8 +5,11 @@
   <meta charset="utf-8">
 </head>
   <script>
-  var time = 600;
-  
+  var today = new Date();
+  var dday = new Date("june 24, 2022 11:40:00");
+    
+  var gap = dday.getTime() - today.getTime();
+  var time = Math.ceil(gap / 1000);
   var x = setInterval(function() {
           document.getElementById("demo").innerHTML = time + "초";
           time--;
