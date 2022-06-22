@@ -1,5 +1,18 @@
 ﻿<!DOCTYPE html>
 <html>
+<script>
+  var time = 600;
+  
+  var x = setInterval(function()
+          document.getElementById("demo").innerHTML = time + "초";
+          time--;
+          
+          if(time < 0){
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "축하";
+         }
+  }, 1000);
+</script>
 <head>
   <title>About ByongRyun Shin</title>
   <meta charset="utf-8">
@@ -8,7 +21,9 @@
 <STYLE TYPE="text/css">
 <!--body {line-height: 150%;} ← 현재 라인간격은 150% (수치가 높으면 간격 넓어짐)
 </STYLE>
-
+  <h1>블레스롤 레오블라미수 먹을때까지...</h1>
+  <div id="demo"></div>
+  <br>
 <h1>Software.. Just For Fun</h1>
 <!--
 <ol>
